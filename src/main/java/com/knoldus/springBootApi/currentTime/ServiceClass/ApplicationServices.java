@@ -5,12 +5,18 @@ import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+* Represents a Service class of 1-api  Application.
+*/
 @Service
 public class ApplicationServices {
-
+                /**
+                * Represents Automated Current Time Status
+                */
                 public static final long MSEC_SINCE_EPOCH = System.currentTimeMillis();
-
+                 /**
+                * getTimeStatus() Represents  Time Status
+                */
                 public String getTimeStatus(){
 
                         Date c_date = new Date( MSEC_SINCE_EPOCH );
