@@ -1,4 +1,4 @@
-package com.knoldus.springBootApi.currentTime.ServiceClass;
+package com.knoldus.springBootApi.currentTime.service;
 
 
 import org.springframework.stereotype.Service;
@@ -6,17 +6,16 @@ import org.springframework.stereotype.Service;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 /**
-* Represents a Service class of 1-api  Application.
+ * Project : spring-boot-REST-api-example
+ * Created by IntelliJ IDEA.
+ * User: shashikant
+ * Date: 22/06/2022
 */
 @Service
-public class ApplicationServices {
-                /**
-                * Represents Automated Current Time Status
-                */
+public class CurrentDateTime {
+
                 public static final long MSEC_SINCE_EPOCH = System.currentTimeMillis();
-                 /**
-                * getTimeStatus() Represents  Time Status
-                */
+
                 public String getTimeStatus(){
 
                         Date c_date = new Date( MSEC_SINCE_EPOCH );
@@ -26,6 +25,7 @@ public class ApplicationServices {
 
                         // Set the time format that we would require
                         String current_time = simpleDateFormat.format( c_date );
+
                         return "Current Running Time:, "+ current_time;
                 }
 }

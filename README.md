@@ -1,10 +1,16 @@
-## Spring-boot-application-with-one-Controller-with-1-api
+## REST-API to display current Date & Time
 
 # README
-## Clone Repository :
-```
-https://github.com/Shashikant-15/Spring-boot-application-with-one-Controller-with-1-api.git
-```
-### Assignments:
-* Create an Spring boot application with one Controller with 1 api
-* Create an Spring boot application with one Controller class (Maven project) add a method which will be called when "/status" api is called , and it will return "Running, {Current Time}"
+
+### Requirements:
+* Java 8 or more
+* Java Platform (JDK) 8
+* Apache Maven 3.x
+
+### Quick start
+````
+mvn clean spring-boot:run
+````
+
+  Point your browser to  http://localhost:8089/
+
